@@ -34,15 +34,13 @@ A tiny, lightweight widget that lives on the Windows taskbar and always shows ho
 - **Windows 10 and Windows 11** styles: flat on Windows 10, rounded on Windows 11. Follows the system light/dark theme and accent color.
 - **Hides in fullscreen** (games, video) together with the taskbar, and stays visible across virtual desktops.
 - **Light**: one small `.exe`, no installer, no extra runtime, low memory use.
-- **Auto-update** from GitHub Releases (optional).
+- **Auto-update**.
 - All settings are stored in the registry: `HKEY_CURRENT_USER\Software\PrayerBar`.
 
 ### Install
 
 1. Download `PrayerBar.exe` from the [latest release](../../releases/latest).
 2. Put it in any folder you own (for example `Documents\PrayerBar`) and run it.
-3. Click the widget → **Settings** to choose language, city, notifications and more.
-4. Enable **Start with Windows** in the settings if you want it to start automatically.
 
 > Windows SmartScreen may warn about an unsigned app. Click **More info → Run anyway**.
 > Keep the file in a folder where you can write, otherwise auto-update cannot replace it.
@@ -66,7 +64,7 @@ PrayerBar has no account, no analytics and no ads. It talks to these services on
 | [ip-api.com](https://ip-api.com) | Automatic location | Your IP address (the service sees it, as any website does) |
 | [open-meteo.com](https://open-meteo.com) | City search and time zone | The city name or coordinates |
 | [aladhan.com](https://aladhan.com) | Prayer times and Hijri date | Coordinates and date |
-| GitHub | Update check (optional) | A standard request to the public Releases API |
+| GitHub | Update check | A standard request to the public Releases API |
 
 Choose a city manually in the settings if you do not want automatic location by IP.
 
@@ -127,15 +125,13 @@ Set your repository once in `UPD_REPO` (format `owner/name`) or in the registry 
 - **Стили Windows 10 и Windows 11**: плоский для Windows 10, скруглённый для Windows 11. Учитывает светлую и тёмную тему и акцентный цвет системы.
 - **Скрывается в полноэкранном режиме** (игры, видео) вместе с панелью задач и не пропадает при смене рабочих столов.
 - **Лёгкий**: один небольшой `.exe`, без установщика и дополнительных библиотек, мало памяти.
-- **Автообновление** из GitHub Releases (по желанию).
+- **Автообновление**.
 - Все настройки хранятся в реестре: `HKEY_CURRENT_USER\Software\PrayerBar`.
 
 ### Установка
 
 1. Скачай `PrayerBar.exe` из [последнего релиза](../../releases/latest).
 2. Положи его в любую свою папку (например, `Документы\PrayerBar`) и запусти.
-3. Нажми на виджет, затем **Настройки**: язык, город, уведомления и остальное.
-4. Включи **Запускать вместе с Windows**, если хочешь автозапуск.
 
 > SmartScreen может предупредить о неподписанной программе. Нажми **Подробнее → Выполнить в любом случае**.
 > Держи файл в папке, куда можно писать, иначе автообновление не сможет его заменить.
@@ -159,7 +155,7 @@ Set your repository once in `UPD_REPO` (format `owner/name`) or in the registry 
 | [ip-api.com](https://ip-api.com) | Автоопределение города | Твой IP-адрес (сервис видит его, как любой сайт) |
 | [open-meteo.com](https://open-meteo.com) | Поиск города и часовой пояс | Название города или координаты |
 | [aladhan.com](https://aladhan.com) | Время намазов и дата по хиджре | Координаты и дата |
-| GitHub | Проверка обновлений (по желанию) | Обычный запрос к публичному API релизов |
+| GitHub | Проверка обновлений | Обычный запрос к публичному API релизов |
 
 Если не хочешь определять город по IP, выбери его вручную в настройках.
 
