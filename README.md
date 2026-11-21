@@ -68,7 +68,7 @@ PrayerBar has no account, no analytics and no ads. It talks to these services on
 
 Choose a city manually in the settings if you do not want automatic location by IP.
 
-The program is completely open source. Make in C++. There are no viruses in it.
+> **Important!** The program is completely open source. Make in C++. There are no viruses in it.
 
 ---
 
@@ -129,4 +129,4 @@ The program is completely open source. Make in C++. There are no viruses in it.
 
 Если не хочешь определять город по IP, выбери его вручную в настройках.
 
-Программа полностью с открытым исходным кодом. Сделана на C++. Никаких вирусов здесь нет.
+> **Важно!** Программа полностью с открытым исходным кодом. Сделана на C++. Никаких вирусов здесь нет.
