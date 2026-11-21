@@ -68,6 +68,8 @@ PrayerBar has no account, no analytics and no ads. It talks to these services on
 
 Choose a city manually in the settings if you do not want automatic location by IP.
 
+The program is completely open source. There are no viruses in it.
+
 ---
 
 ## Русский
@@ -92,7 +94,7 @@ Choose a city manually in the settings if you do not want automatic location by 
 - **Вид**: размер шрифта, цвет, прозрачность, выравнивание и отступ от трея с живым предпросмотром.
 - **Стили Windows 10 и Windows 11**: плоский для Windows 10, скруглённый для Windows 11. Учитывает светлую и тёмную тему и акцентный цвет системы.
 - **Скрывается в полноэкранном режиме** (игры, видео) вместе с панелью задач и не пропадает при смене рабочих столов.
-- **Лёгкий**: один небольшой `.exe`, без установщика и дополнительных библиотек, мало памяти.
+- **Лёгкий**: один небольшой `.exe`, без установщика и дополнительных библиотек, маленькое использование памяти.
 - **Автообновление**.
 - Все настройки хранятся в реестре: `HKEY_CURRENT_USER\Software\PrayerBar`.
 
@@ -126,3 +128,5 @@ Choose a city manually in the settings if you do not want automatic location by 
 | GitHub | Проверка обновлений | Обычный запрос к публичному API релизов |
 
 Если не хочешь определять город по IP, выбери его вручную в настройках.
+
+Программа полностью с открытым исходным кодом. Никаких вирусов здесь нет.
