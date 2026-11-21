@@ -67,8 +67,8 @@ PrayerBar has no account, no analytics and no ads. It talks to these services on
 | GitHub | Update check | A standard request to the public Releases API |
 
 Choose a city manually in the settings if you do not want automatic location by IP.
-
->🔴 **Important!** The program is completely open source. Make in C++. There are no viruses in it.
+> [!CAUTION]
+> **Important!** The program is completely open source. Make in C++. There are no viruses in it.
 
 ---
 
@@ -128,5 +128,5 @@ Choose a city manually in the settings if you do not want automatic location by 
 | GitHub | Проверка обновлений | Обычный запрос к публичному API релизов |
 
 Если не хочешь определять город по IP, выбери его вручную в настройках.
-
->🔴 **Важно!** Программа полностью с открытым исходным кодом. Сделана на C++. Никаких вирусов здесь нет.
+> [!CAUTION]
+> **Важно!** Программа полностью с открытым исходным кодом. Сделана на C++. Никаких вирусов здесь нет.
