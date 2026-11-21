@@ -68,38 +68,6 @@ PrayerBar has no account, no analytics and no ads. It talks to these services on
 
 Choose a city manually in the settings if you do not want automatic location by IP.
 
-### Updates
-
-The app checks GitHub Releases at start and once a day. It downloads **only** `PrayerBar.exe` from this repository over HTTPS, verifies its SHA-256 checksum, replaces itself and restarts. Nothing else is downloaded or installed. Turn it off in the widget menu (**Auto-update**).
-
-### Build from source
-
-Requires a C++17 compiler for Windows (MinGW-w64 or MSVC).
-
-```bash
-# 1) compile the icon resource (MinGW)
-windres res/app.rc -O coff -o res/app.res
-
-# 2) build
-g++ PrayerBar.cpp res/app.res -o PrayerBar.exe -std=c++17 -Os -s -mwindows -static \
-    -lwinhttp -lgdi32 -luser32 -lshell32 -ladvapi32 -lbcrypt
-```
-
-MSVC: `cl /utf-8 /EHsc /O1 PrayerBar.cpp /link /SUBSYSTEM:WINDOWS`
-
-### Publishing a release (for maintainers)
-
-1. Raise `APP_VERSION` in `PrayerBar.cpp` and build.
-2. Create a GitHub release with a tag like `v1.1.0`.
-3. Attach the file named exactly **`PrayerBar.exe`**.
-
-Set your repository once in `UPD_REPO` (format `owner/name`) or in the registry value `UpdateRepo`.
-
-### Notes
-
-- Prayer times come from an online calculation service, so small differences from your local mosque are normal. Use **Settings → Times** and **Iqama** to match them.
-- Not affiliated with any religious authority. Please verify times with your local mosque if in doubt.
-
 ---
 
 ## Русский
@@ -158,35 +126,3 @@ Set your repository once in `UPD_REPO` (format `owner/name`) or in the registry 
 | GitHub | Проверка обновлений | Обычный запрос к публичному API релизов |
 
 Если не хочешь определять город по IP, выбери его вручную в настройках.
-
-### Обновления
-
-Программа проверяет GitHub Releases при запуске и раз в сутки. Она скачивает **только** `PrayerBar.exe` из этого репозитория по HTTPS, проверяет контрольную сумму SHA-256, заменяет себя и перезапускается. Больше ничего не скачивается и не устанавливается. Отключить можно в меню виджета (**Автообновление**).
-
-### Сборка из исходников
-
-Нужен компилятор C++17 для Windows (MinGW-w64 или MSVC).
-
-```bash
-# 1) ресурс с иконкой (MinGW)
-windres res/app.rc -O coff -o res/app.res
-
-# 2) сборка
-g++ PrayerBar.cpp res/app.res -o PrayerBar.exe -std=c++17 -Os -s -mwindows -static \
-    -lwinhttp -lgdi32 -luser32 -lshell32 -ladvapi32 -lbcrypt
-```
-
-MSVC: `cl /utf-8 /EHsc /O1 PrayerBar.cpp /link /SUBSYSTEM:WINDOWS`
-
-### Как выпустить релиз (для автора)
-
-1. Увеличь `APP_VERSION` в `PrayerBar.cpp` и собери программу.
-2. Создай релиз на GitHub с тегом вида `v1.1.0`.
-3. Приложи файл с именем строго **`PrayerBar.exe`**.
-
-Репозиторий один раз задаётся в `UPD_REPO` (формат `логин/название`) или в реестре, значение `UpdateRepo`.
-
-### Примечания
-
-- Время намазов считает онлайн-сервис, поэтому небольшие отличия от твоей мечети нормальны. Подстрой их в **Настройки → Время** и **Икама**.
-- Проект не связан ни с какой религиозной организацией. Если есть сомнения, сверяйся с расписанием своей мечети.
