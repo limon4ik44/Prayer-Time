@@ -39,8 +39,8 @@ A tiny, lightweight widget that lives on the Windows taskbar and always shows ho
 
 ### Install
 
-1. Download `PrayerBar.exe` from the [latest release](../../releases/latest).
-2. Put it in any folder you own (for example `Documents\PrayerBar`) and run it.
+1. Download `Sujood.exe` from the [latest release](../../releases/latest).
+2. Put it in any folder you own (for example `Documents\Sujood`) and run it.
 
 > Windows SmartScreen may warn about an unsigned app. Click **More info → Run anyway**.
 > Keep the file in a folder where you can write, otherwise auto-update cannot replace it.
@@ -55,19 +55,9 @@ A tiny, lightweight widget that lives on the Windows taskbar and always shows ho
 | Settings → **Iqama** | Minutes from Adhan to Iqama for each prayer |
 | Settings → **Look** | Font, color, opacity, alignment, distance from the tray |
 
-### Privacy and data sources
-
-PrayerBar has no account, no analytics and no ads. It talks to these services only:
-
-| Service | Used for | What is sent |
-| --- | --- | --- |
-| [ip-api.com](https://ip-api.com) | Automatic location | Your IP address (the service sees it, as any website does) |
-| [open-meteo.com](https://open-meteo.com) | City search and time zone | The city name or coordinates |
-| [aladhan.com](https://aladhan.com) | Prayer times and Hijri date | Coordinates and date |
-| GitHub | Update check | A standard request to the public Releases API |
-
 Choose a city manually in the settings if you do not want automatic location by IP.
 > [!CAUTION]
+> PrayerBar has no account, no analytics and no ads
 > The program is completely open source. Make in C++. There are no viruses in it.
 
 ---
@@ -100,8 +90,8 @@ Choose a city manually in the settings if you do not want automatic location by 
 
 ### Установка
 
-1. Скачай `PrayerBar.exe` из [последнего релиза](../../releases/latest).
-2. Положи его в любую свою папку (например, `Документы\PrayerBar`) и запусти.
+1. Скачай `Sujood.exe` из [последнего релиза](../../releases/latest).
+2. Положи его в любую свою папку (например, `Документы\Sujood`) и запусти.
 
 > SmartScreen может предупредить о неподписанной программе. Нажми **Подробнее → Выполнить в любом случае**.
 > Держи файл в папке, куда можно писать, иначе автообновление не сможет его заменить.
@@ -116,17 +106,8 @@ Choose a city manually in the settings if you do not want automatic location by 
 | Настройки → **Икама** | Минуты от азана до икамы для каждого намаза |
 | Настройки → **Вид** | Шрифт, цвет, прозрачность, выравнивание, отступ от трея |
 
-### Конфиденциальность и источники данных
-
-В PrayerBar нет аккаунтов, аналитики и рекламы. Программа обращается только к этим сервисам:
-
-| Сервис | Для чего | Что отправляется |
-| --- | --- | --- |
-| [ip-api.com](https://ip-api.com) | Автоопределение города | Твой IP-адрес (сервис видит его, как любой сайт) |
-| [open-meteo.com](https://open-meteo.com) | Поиск города и часовой пояс | Название города или координаты |
-| [aladhan.com](https://aladhan.com) | Время намазов и дата по хиджре | Координаты и дата |
-| GitHub | Проверка обновлений | Обычный запрос к публичному API релизов |
 
 Если не хочешь определять город по IP, выбери его вручную в настройках.
 > [!Caution]
+> В PrayerBar нет аккаунтов, аналитики и рекламы.
 > Программа полностью с открытым исходным кодом. Сделана на C++. Никаких вирусов здесь нет.
