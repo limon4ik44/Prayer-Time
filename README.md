@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌙 PrayerBar
+# 🌙 Sujood
 
 **Prayer times right on your Windows taskbar** - 
 **Время намазов прямо на панели задач Windows**
