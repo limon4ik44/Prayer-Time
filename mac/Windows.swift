@@ -64,7 +64,6 @@ final class MonthWindow: NSObject, NSTableViewDataSource, NSTableViewDelegate {
         table.delegate = self
         table.rowHeight = 20
         table.usesAlternatingRowBackgroundColors = true
-        table.allowsSelection = false
         scroll.documentView = table
         content.addSubview(prevBtn)
         content.addSubview(nextBtn)
@@ -161,6 +160,8 @@ final class MonthWindow: NSObject, NSTableViewDataSource, NSTableViewDelegate {
     @objc func nextTapped() { step(1) }
 
     func numberOfRows(in tableView: NSTableView) -> Int { rows.count }
+
+    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool { false }
 
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         guard let id = tableColumn?.identifier.rawValue, row < rows.count else { return nil }
